@@ -80,7 +80,7 @@ public class Enemy : MonoBehaviour
             }
 
           
-            StartCoroutine(FadeAndDestroy(1.0f)); 
+            StartCoroutine(FadeAndDestroy(10.0f)); 
         }
     }
 
@@ -109,6 +109,6 @@ public class Enemy : MonoBehaviour
         spriteRenderer.color = new Color(startColor.r, startColor.g, startColor.b, 0);
 
        
-        Destroy(gameObject,1);
+        Destroy(gameObject,100);
     }
 }
